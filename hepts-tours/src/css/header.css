@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
+
+
+.header--container {
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    visibility: show;
+    transition: opacity 1s ease, visibility 1s ease;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("../assets/images/hero_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color-dodge;
+}
+
+.header--row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 12rem;
+}
+
+.header--logo {
+    font-size: 2rem;
+    color: white;
+    font-family: "Abril Fatface", times, serif;
+}
+
+.header--menu-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+    cursor: pointer;
+    /* padding: 1rem 1rem; */
+}
+
+.header--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8%;
+    line-height: 7rem;
+}
+
+.header--content h1 {
+    font-size: 4.5rem;
+    font-family: "Abril Fatface", times, serif;
+    color: white;
+
+
+}
+
+.header--content p {
+    font-family: "Mukta Mahee", arial, sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.header--content p a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: border-color 0.5s ease, color 0.5s ease;
+}
+.header--content p a:hover {
+    color: white;
+    border-bottom-color: white;
+}
+.header--content button{
+    background: transparent;
+    padding: 1.2rem;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+.header--content button:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
+}
+
+.header--hide {
+    opacity: 0;
+    visibility: hidden;
+}
