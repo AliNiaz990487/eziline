@@ -5,9 +5,9 @@ import "./Nav.css";
 const Nav = forwardRef(({ onClose }, ref) => {
     return (
         <nav ref={ref} className="nav">
-            <button className="nav--close-icon" onClick={onClose}>
-                <FaTimes />
-            </button>
+            <div className="nav--row">
+                <FaTimes className="nav--close-icon" onClick={onClose}/>
+            </div>
             <ul className="nav--ul">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Hotels</a></li>

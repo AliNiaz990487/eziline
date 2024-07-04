@@ -17,7 +17,7 @@ export default function Header(props) {
     return (
         <header>
             <Nav ref={navRef} onClose={toggleNav} />
-            <Hero ref={headerRef} heroText={props.heroText} click={toggleNav} children={props.children}/>
+            <Hero ref={headerRef} className={props.heroClassName} heroText={props.heroText} click={toggleNav} children={props.children}/>
         </header>
     );
 }

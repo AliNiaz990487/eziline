@@ -1,0 +1,43 @@
+.team-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 4rem;
+    padding: 0 6rem;
+    max-width: 1200px;
+    margin: var(--section-padding-td) auto;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    transition: .3s box-shadow ease-in-out;
+}
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+}
+
+.card p {
+    font-family: var(--font-faimly-mukta);
+    font-size: var(--font-size-smaller);
+    font-weight: var(--font-smaller-weight);
+    color: rgb(161, 161, 161);
+    margin: 2rem;
+    text-transform: uppercase;
+}
+
+.card h2 {
+    font-family: var(--font-faimly-abril);
+    font-size: calc(var(--font-size-medium) - 0.5rem);
+    font-weight: var(--font-medium-weight);
+    margin: 0 2rem 3rem;
+    color: #000;
+    transition: .3s color ease-in-out
+}
+.card h2:hover {
+    color: var(--color-cyan)
+}

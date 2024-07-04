@@ -4,7 +4,7 @@ import Welcome from "./Welcome/Welcome.jsx";
 import Experiences from "../../components/ui/Experiences/Experiences.jsx";
 import CarouselTopText from "../../components/ui/CarouselTopText/CarouselTopText.jsx";
 import Carousel from "../../components/ui/Carousel/Carousel.jsx";
-import BlogPostsTopText from "./BlogPostsTopText/BlogPostsTopText.jsx";
+import BlogPostsTopText from "../../components/ui/BlogPostsTopText/BlogPostsTopText.jsx";
 import BlogPosts from "../../components/ui/BlogPosts/BlogPosts.jsx";
 import HappyCustomers from "../../components/ui/HappyCustomers/HappyCustomers.jsx";
 import TopDestinations from "./TopDestination/TopDestinations.jsx";
@@ -14,8 +14,8 @@ import "./Home.css";
 export default function Home() {
     return (
     <>
+        <Header heroText="Travel & Tours" children={<VisitButton />} />
         <main>
-            <Header heroText="Travel & Tours" children={<VisitButton />} />
             <Welcome className="welcome-section" />
             <Experiences includeText={true} />
             <CarouselTopText heading="International Tour Management." peragraph="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean." />

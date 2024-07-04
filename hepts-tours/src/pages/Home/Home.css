@@ -7,8 +7,8 @@
     background: linear-gradient(175deg, white 65%, var(--color-cyan) 35%);
 }
 .customers {
-    padding: var(--section-padding-td);
+    padding: var(--section-padding-td) 0;
 }
 .destinations {
-    padding: var(--section-padding-td);
+    padding: var(--section-padding-td) 0;
 }

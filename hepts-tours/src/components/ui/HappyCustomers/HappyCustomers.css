@@ -58,15 +58,20 @@
 
 @media (max-width: 768px) {
     .customers--wraper {
-        flex-direction: column;
-        align-items: center;
+        display: block;
     }
     .customer {
         width: 50rem;
+        margin-bottom: 4rem;
     }
 }
 @media (max-width: 580px) {
+    .customers--wraper {
+        width: 100%;
+    }
     .customer {
+        margin: auto;
+        margin-bottom: 4rem;
         width: 90%;
     }
 }

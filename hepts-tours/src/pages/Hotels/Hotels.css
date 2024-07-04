@@ -1,0 +1,25 @@
+header {
+    height: 53rem;
+}
+
+.hero--container {
+    background-image: url("../../assets/images/slider-4.jpg");
+    background-size: cover;
+    background-position-y: 70%;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 53rem;
+}
+.hero-text {
+    padding-top: 1rem;
+}
+
+.carousel {
+    background: linear-gradient(178deg, white 65%, #e9ecef 35%);
+}
+.blog-posts--text, .blog-posts--wraper{
+    background-color: #e9ecef !important;
+}
+.blog-posts--text p {
+    color: rgb(83, 83, 83);
+}

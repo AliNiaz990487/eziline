@@ -1,0 +1,21 @@
+
+.opposite-card {
+    flex-direction: row-reverse;
+}
+.opposite-card .image {
+    background-image: url("../../../assets/images/img_1_long.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.opposite-card .intro-card--content {
+    padding-left: 4rem;
+}
+
+@media (max-width: 768px) {
+    .opposite-card {
+        padding-top: 5rem;
+    }
+    .opposite-card .intro-card--content {
+        padding-left: 0;
+    }
+}

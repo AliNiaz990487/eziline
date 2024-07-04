@@ -1,0 +1,13 @@
+
+.intro-card {
+    padding: var(--section-padding-td) 0;
+}
+.carousel {
+    background: initial;
+}
+.blog-posts--text {
+    background-color: white !important;   
+}
+.blog-posts--text h2 {
+    font-size: var(--font-size-medium);
+}

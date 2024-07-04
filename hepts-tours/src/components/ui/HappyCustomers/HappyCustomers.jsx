@@ -25,7 +25,7 @@ const customers = [
 
 export default function Customers(props) {
     return (
-        <div className={`customers ${props.className}`}>
+        <section className={`customers ${props.className}`}>
             <h2>Happy Customers</h2>
             <div className="customers--wraper">
                 {
@@ -38,6 +38,6 @@ export default function Customers(props) {
                     ))
                 }
             </div>
-        </div>
+        </section>
     )
 }
