@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
+
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html {
+    font-size: 62.5%;
+}
+ul {
+    list-style: none;
+}
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+:root {
+    --font-faimly-abril: "Abril Fatface", times, serif;
+    --font-faimly-mukta: "Mukta Mahee", arial, sans-serif;
+    
+    --font-size-larger: 8rem;
+    --font-size-medium: 3.2rem;
+    --font-size-smaller: 1.8rem;
+    
+    --font-larger-weight: bold;
+    --font-medium-weight: 500;
+    --font-smaller-weight: 200;
+
+    --font-larger-color: #fff;
+    --font-smaller-color: #6c757d;
+    --font-medium-color: #000;
+
+    --color-dark: #343a40;
+    --color-cyan: rgb(101, 192, 186);
+    --color-white: #fff;
+
+
+    --section-padding-td: 12.6rem;
+}
+
+h1, h2 h3 {
+    font-family: var(--font-faimly-abril);
+    color: var(--font-larger-color);
+    font-weight: var(--font-larger-weight);
+}
+p {
+    font-family: var(--font-faimly-mukta);
+    font-weight: var(--font-medium-weight);
+}
+.container {
+    width: 100vw;
+    max-width: 1600px;
+    height: fit-content;
+    margin: 0 auto;
+}

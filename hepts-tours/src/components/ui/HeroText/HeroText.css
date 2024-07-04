@@ -1,0 +1,36 @@
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hero-text h1 {
+    color: var(--font-larger-color);
+    font-size: var(--font-size-larger);
+    padding: 0 0 0.2em 0;
+}
+
+.hero-text p {
+    color: var(--color-white);
+    font-size: 2.5rem;
+    font-weight: var(--font-smaller-weight);
+}
+.hero-text p a {
+    color: var(--color-dark);
+    border-bottom: 1px solid var(--color-dark);
+    cursor: pointer;
+    transition: border-color 0.5s ease, color 0.5s ease;
+}
+.hero-text p a:hover {
+    color: var(--color-white);
+    border-bottom-color: var(--color-white);
+}
+
+@media (max-width: 991px) {
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+    .hero-text p {
+        font-size: 1.8rem;
+    }
+}

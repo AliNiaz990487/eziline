@@ -1,0 +1,32 @@
+.experiences-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experiences--main-text {
+    font-size: var(--font-size-medium);    
+    font-family: var(--font-faimly-abril);
+    text-align: center;
+}
+.experiences--secondary-text {
+    font-size: var(--font-size-smaller);
+    font-weight: var(--font-smaller-weight);
+    color: var(--font-smaller-color);
+    width: 48%;
+    text-align: center;    
+}
+
+@media (max-width: 1197px) {
+    .experiences--secondary-text {
+        width: 80%;
+    }
+}
+@media (max-width: 987) {
+    .experiences--secondary-text {
+        width: 80%;
+    }
+    .experiences--main-text {
+        width: 80%;
+    }
+}
+

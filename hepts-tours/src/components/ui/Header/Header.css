@@ -1,0 +1,10 @@
+
+.hero-text {
+    padding: 4rem 0rem;
+}
+
+.hero--children {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}

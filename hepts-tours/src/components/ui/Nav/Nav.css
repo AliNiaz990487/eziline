@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
 
 nav {
     width: 100vw;
     height: 100vh;
+    min-height: 600px;
     background-color: white;
     position: fixed;
     top: 0;
@@ -13,28 +12,24 @@ nav {
     z-index: 1000;
     padding: 1rem;
     transition: opacity 1s ease, visibility 1s ease;
-    }
-    
+}
 .nav--show {
     visibility: visible;
     opacity: 1;
 }
 
 .nav--close-icon {
-    background: none;
-    border: none;
-    color: black;
-    font-size: 2rem;
+    all: unset;
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-medium-weight);
+    font-family: var(--font-faimly-mukta);
     cursor: pointer;
     position: absolute;
-    top: 2.3rem;
-    right: 14rem;
+    top: 3.5rem;
+    right: 2rem;
 }
 
 .nav--ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,12 +42,11 @@ nav {
 }
 
 .nav--ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 2.5rem;
-    font-family: "Abril Fatface", times, serif;
+    font-size: 4rem;
+    font-family: var(--font-faimly-abril);
+    font-weight: var(--font-smaller-weight);
     transition: color 0.5s ease;
 }
 .nav--ul li a:hover{
-    color: #65c0ba;
+    color: var(--color-cyan);
 }

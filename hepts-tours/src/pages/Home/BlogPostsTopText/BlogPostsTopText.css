@@ -1,0 +1,30 @@
+.blog-posts--text {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    padding-top: var(--section-padding-td);
+    background-color: var(--color-cyan);
+}
+.blog-posts--text h2 {
+    font-family: var(--font-faimly-abril);
+    font-size: 7rem;
+    font-weight: var(--font-larger-weight);
+    text-align: center;
+}
+.blog-posts--text p {
+    font-family: var(--font-faimly-mukta);
+    text-align: center;
+    font-weight: var(--font-smaller-weight);
+    font-size: var(--font-size-smaller);
+    max-width: 65rem;
+    color: white;
+}
+
+@media (max-width: 986px) {
+    .blog-posts--text h2{
+        font-size: 4rem;
+    }
+    .blog-posts--text p {
+        font-size: 1.6rem;
+    }
+}

@@ -1,10 +1,10 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import { FaTimes } from "react-icons/fa";
-import "../css/nav.css";
+import "./Nav.css";
 
 const Nav = forwardRef(({ onClose }, ref) => {
     return (
-        <nav ref={ref}>
+        <nav ref={ref} className="nav">
             <button className="nav--close-icon" onClick={onClose}>
                 <FaTimes />
             </button>
