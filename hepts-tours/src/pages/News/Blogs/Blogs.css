@@ -1,0 +1,33 @@
+.blogs-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 3rem;
+}
+    
+.blog-card-style {
+    object-fit: cover;
+    width: 100%;
+    }
+.blog-card-style img {
+    height: 23rem;
+}
+.blog-card-style h2 {
+    font-size: var(--font-size-medium);
+}
+        
+@media (max-width: 768px) {
+    .blogs-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .blog-card-style img {
+        height: 35rem;  
+    }
+}
+
+@media (max-width: 568px) {
+    .blog-card-style img {
+        height: 25rem;
+    }
+} 

@@ -1,0 +1,22 @@
+
+
+.categories {
+    padding: 3rem;
+    background-color: #eeeeee;
+    border: 1px solid #7b7b7b;
+}
+.categories > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+.category {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-smaller);
+    padding: 1rem 0;
+    border-bottom: 1px solid #cbcbcb;
+    color: var(--color-cyan);
+}
+.category span:last-child {
+    color: #9b9b9b;
+}

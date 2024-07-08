@@ -1,0 +1,52 @@
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #ccc;
+    padding: 4rem;
+    row-gap: 2rem;
+    gap: 2rem;
+}
+form label:nth-child(3) {
+    grid-column: span 2;
+}
+form label:nth-child(4) {
+    grid-column: span 2;
+}
+   
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    border: 2px solid #ddd;
+    outline: none;
+    transition: .3s border-color;
+}
+form textarea {
+    min-height: 20rem;
+}
+form input:focus, form textarea:focus {
+    border-color: var(--color-cyan);
+}
+form label {
+    font-size: calc(var(--font-size-smaller) - .5rem);
+    color: var(--font-smaller-color)
+}
+
+form .visit-button {
+    font-size: calc(var(--font-size-smaller) - .2rem);
+    /* padding: 1rem 1.5rem; */
+    letter-spacing: normal;
+    text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+} 

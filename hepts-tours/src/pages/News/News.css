@@ -1,0 +1,20 @@
+
+.news {
+    max-width: 1200px;
+    margin: 8rem auto;
+    display: flex;
+    gap: 6rem;
+    width: fit-content;
+}
+@media (max-width: 1190px) {
+    .news {
+        flex-direction: column;
+        padding: 3rem 4rem;
+    }
+}
+@media (max-width: 998px) {
+    .news {
+        padding: 3rem 4rem;
+        /* flex-direction: column; */
+    }
+}

@@ -1,0 +1,31 @@
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #eeeeee;
+    border: 1px solid #7b7b7b;
+    font-size: var(--font-size-smaller);
+    width: inherit;
+
+}
+.search {
+    background-color: white;
+    border: 2px solid #bbb;
+    padding: 1rem;
+    width: 100%;
+    transition: border-color .3s;
+}
+.search input {
+    all: unset;
+    padding: 0 1rem;
+}
+.search:focus-within {
+    border-color: #777;
+}
+@media (max-width: 1198px) {
+    .search input{
+        width: 60%;
+    }
+}

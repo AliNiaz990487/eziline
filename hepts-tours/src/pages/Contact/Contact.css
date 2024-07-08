@@ -1,0 +1,14 @@
+.contact-section {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 5rem auto;
+    gap: 4rem;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 2rem;
+        flex-direction: column;
+    }
+}

@@ -42,7 +42,7 @@ export default function TopDestinations(props) {
             <div className="destination--wrapper">
                 {
                     destinations.map((destination, index) => {
-                        return <div className="destination">
+                        return <div className="destination" key={index}>
                             <img src={destination.image} alt={destination.title} />
                             <h2>{destination.title}</h2>
                             <div className="destination--ratings-reviews">

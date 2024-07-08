@@ -1,5 +1,5 @@
 .hero--container {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     min-height: 600px;
     visibility: show;
@@ -11,6 +11,7 @@
     background-position: center;
     background-size: cover;
     background-blend-mode: color-dodge;
+    background-attachment: initial !important;
 }
 
 .hero--row {

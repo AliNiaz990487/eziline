@@ -16,7 +16,7 @@ export default function AboutUs(props) {
                 <IntroCard heading="Welcome Travel & Tours"/>
                 <CarouselTopText heading="Hotel Gallery"/>
                 <Carousel />
-                <BlogPostsTopText heading="Team"/>
+                <BlogPostsTopText className="team-about-us-bg" heading="Team"/>
                 <TeamCards />
             </main>
             <Footer />

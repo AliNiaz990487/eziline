@@ -3,12 +3,46 @@
     padding: var(--section-padding-td);
 }
 
-.carousel {
+.carousel-home-bg {
     background: linear-gradient(175deg, white 65%, var(--color-cyan) 35%);
+}
+.blog-posts-top-text {
+    background-color: var(--color-cyan);
+}
+.blog-posts-top-text h2 {
+    font-size: var(--font-size-larger);
 }
 .customers {
     padding: var(--section-padding-td) 0;
 }
 .destinations {
     padding: var(--section-padding-td) 0;
+}
+
+
+.home-btn{
+    all: unset;
+    background: transparent;
+    padding: 1.5em 2.5em;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: var(--font-medium-weight);
+    text-transform: uppercase;
+    border-radius: 3px;
+    letter-spacing: 0.3em;
+    font-family: var(--font-faimly-mukta);
+    cursor: pointer;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+.home-btn:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 571px) {
+    .home-btn {
+        width: 70%;
+        text-align: center;
+    }
 }

@@ -14,13 +14,13 @@ import "./Home.css";
 export default function Home() {
     return (
     <>
-        <Header heroText="Travel & Tours" children={<VisitButton />} />
+        <Header heroText="Travel & Tours" children={<VisitButton btnStyle={true} btnStyleClass="home-btn"  buttonText="Visit Colorlib"/>} />
         <main>
             <Welcome className="welcome-section" />
             <Experiences includeText={true} />
             <CarouselTopText heading="International Tour Management." peragraph="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean." />
-            <Carousel className="carousel" />
-            <BlogPostsTopText />
+            <Carousel className="carousel-home-bg" />
+            <BlogPostsTopText heading="Recent Blog Post" className="blog-posts-top-text"/>
             <BlogPosts includeDate={true} includeDescription={false} />
             <HappyCustomers className="customers" />
             <TopDestinations className="destinations" />

@@ -9,12 +9,12 @@ const Nav = forwardRef(({ onClose }, ref) => {
                 <FaTimes className="nav--close-icon" onClick={onClose}/>
             </div>
             <ul className="nav--ul">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Hotels</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/hotels">Hotels</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
         </nav>
     );

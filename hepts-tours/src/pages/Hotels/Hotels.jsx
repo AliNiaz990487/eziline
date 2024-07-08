@@ -17,9 +17,9 @@ export default function Hotels() {
                 <Experiences />
                 <IntroCards />
                 <CarouselTopText heading="Hotel Gallery" peragraph="Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor, iusto doloremque quo odio repudiandae sunt eveniet? Enim facilis laborum voluptate id porro, culpa maiores quis, blanditiis laboriosam alias. Sed." />
-                <Carousel />
-                <BlogPostsTopText heading="More Hotel Features"/>
-                <BlogPosts includeDate={false} includeDescription={false}/>
+                <Carousel className="carousel-hotels-bg"/>
+                <BlogPostsTopText className="blog-posts-top-text-bg" heading="More Hotel Features"/>
+                <BlogPosts className="blog-posts-wrapper-hotels-bg" includeDate={false} includeDescription={false}/>
                 <Footer />
             </main>
         </>
