@@ -20,7 +20,7 @@ const BlogCards = () => {
                                 </div>
                                 <div className="col g-5">
                                     <div className="card-body">
-                                        <h5 className="card-title text-start">5 Things You Need To Know About Dog Massage</h5>
+                                        <h5 className="card-title text-start"><a href="/detail-page">5 Things You Need To Know About Dog Massage</a></h5>
                                         <p className="card-text"><small className="text-muted">April 17, 2019</small></p>
                                         <p className="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                                         <a href="#" className="btn" style={{fontSize: "var(--ft-sm)", color: "var(--bg-clr)"}}>Read More...</a>

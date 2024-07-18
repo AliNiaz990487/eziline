@@ -56,7 +56,7 @@ const Nav = () => {
     <nav id="siteNavId" className={`navbar navbar-expand-lg sticky-top ${navColor ? "active": ""}`} style={{backgroundColor: "#eee"}}>
 
       <div className="container nav-bar">
-        <a className="navbar-brand" href="#">Dogger</a>
+        <a className="navbar-brand" href="/">Dogger</a>
         <button className="navbar-toggler" type="button" onClick={toggleNav} data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
