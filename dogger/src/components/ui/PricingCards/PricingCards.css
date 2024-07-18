@@ -1,0 +1,6 @@
+
+@media (max-width: 768px) {
+    .wrap-cards {
+        flex-wrap: wrap !important;
+    }
+}

@@ -1,0 +1,46 @@
+
+.paw {
+    display: flex; 
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+    color: var(--bg-clr);
+    font-size: var(--ft-md)
+}
+.paw::after, .paw::before {
+    content: "\f1b0";
+    display: inline-block;
+    font-size: var(--ft-sm);
+    opacity: .5;
+}
+.paw::after {
+    transform: rotate(40deg);
+}
+.paw::before {
+    transform: rotate(-40deg)
+}
+
+.paw-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.paw-wrapper h4 {
+    font-family: var(--ff);
+    font-size: var(--ft-md);
+    font-weight: 700;
+    text-align: inherit;
+}
+.paw-wrapper p {
+    font-family: var(--ff);
+    font-size: 1.4rem;
+    color: #888;
+    width: 48rem;
+    text-align: inherit;
+}
+@media (max-width: 576px) {
+    .paw-wrapper h4, .paw-wrapper p {
+        width: initial;
+    }
+}

@@ -1,0 +1,78 @@
+.card {
+    border-radius: initial;
+    border: none;
+    background-color: var(--bg-clr);
+    /* width: 31rem; */
+    flex: auto;
+}
+
+.card-title {
+    font-family: var(--ff);
+    font-size: var(--ft-mds);
+    font-weight: var(--ft-smw);
+    text-align: center;
+}
+
+.card-price {
+    font-family: var(--ff);
+    font-size: 4rem;
+    text-align: center;
+    /* margin: 1rem 0; */
+}
+.period {
+    font-size: var(--ft-sm);
+}
+.fa-ul li {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.7rem;
+    padding-left: 1.5rem;
+    /* position: relative; */
+}
+.fa-ul li::marker {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    /* position: absolute;
+    left: -2rem; */
+
+}
+.text-line-through {
+    /* color: #fff; */
+    text-decoration: line-through;
+}
+
+
+.card-btn {
+    border-radius: 2rem;
+    color: #fff;
+    font-size: var(--ft-sm);
+    padding: .5rem 2rem;
+}
+.card-btn:hover {
+    background-color: #333;
+}
+.card-btn-light {
+    background-color: var(--bg-clr);
+}
+.card-btn-dark {
+    background-color: #777;
+}
+
+
+@media (max-width: 992px) {
+    .card {
+        width: 23rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 26rem;
+    }
+}
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+}

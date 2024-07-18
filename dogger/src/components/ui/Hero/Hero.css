@@ -1,0 +1,29 @@
+.intro-text h2 {
+    font-size: var(--ft-lg);
+    font-weight: 700;
+    font-family: var(--ff);
+    text-transform: uppercase;
+    text-align: start;
+}
+.intro-text p{
+    font-size: var(--ft-sm);
+    font-family: var(--ff);
+    color: #999;
+    text-align: start;
+    width: 30rem;
+}
+
+@media (max-width: 992px) {
+    .intro-text h2 {
+        font-size: var(--ft-md);
+    }
+}
+@media (max-width: 768px) {
+    .intro-text h2{
+        text-align: center;
+    }
+    .intro-text p{
+        text-align: center;
+        width: initial;
+    }
+}

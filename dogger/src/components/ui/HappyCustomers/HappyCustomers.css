@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+.customer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slick-slide > div {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slick-slide img {
+    display: initial;
+}
+.slick-arrow  {
+    all: unset;
+    cursor: pointer;
+    color: transparent;
+    position: absolute;
+}
+.slick-prev {
+    bottom: -5rem;
+    left: 45%;
+}
+.slick-next {
+    bottom: -5rem;
+    right: 45%;
+}
+.slick-arrow::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: black;
+    font-size: 3rem;
+}
+.slick-prev::before {
+    content: "\f060";
+}
+.slick-next::before {
+    content: "\f061"
+}
+
+.review-bubble {
+    background-color: var(--bg-clr);
+    border-radius: 10px;
+    position: relative;
+    padding: 3rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+}
+
+.review-bubble p {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.8rem;
+  line-height: 3rem;
+
+}
+
+.review-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 2rem;
+    border-style: solid;
+    border-color: var(--bg-clr) transparent transparent transparent;
+}
+
+.customer-image {
+    width: 10rem;
+    height: 10rem;
+    border: 1rem solid var(--bg-clr);
+}
+.customer-name {
+    font-size: var(--ft-sm);
+}
+
+@media (max-width: 1200px) {
+    .slick-prev {
+        bottom: -5rem;
+        left: 40%;
+    }
+    .slick-next {
+        bottom: -5rem;
+        right: 40%;
+    }
+}
+@media (max-width: 568px) {
+    .slick-prev {
+        bottom: -5rem;
+        left: 30%;
+    }
+    .slick-next {
+        bottom: -5rem;
+        right: 30%;
+    }
+}

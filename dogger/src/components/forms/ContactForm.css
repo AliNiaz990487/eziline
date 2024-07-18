@@ -1,0 +1,27 @@
+.bg-primary {
+    background-color: var(--bg-clr) !important;
+}
+
+.bg-secondary {
+    background-color: #6a7d8d !important;
+}
+
+.form-label {
+    color: #333;
+}
+
+.btn-dark {
+    background-color: #333;
+    border: none;
+}
+
+
+.contact-form-btn {
+    font-size: var(--ft-sm);
+    padding: 1em 1.5em;
+    border-radius: 5rem;
+}
+
+.contact {
+    background-color: #6c757d !important;
+}

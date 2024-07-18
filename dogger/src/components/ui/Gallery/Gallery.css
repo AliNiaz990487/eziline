@@ -1,0 +1,9 @@
+.gallery-image {
+    cursor: zoom-in;
+    transition: scale .3s ease-in-out;
+}
+
+.gallery-image:hover {
+    scale: 1.3;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+}

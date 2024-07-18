@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --ft-lg: 6.4rem;
+    --ft-md: 3.2rem;
+    --ft-mds: 2.08rem;
+    --ft-sm: 1.6rem;
+
+    --ft-lgw: 900;
+    --ft-mdw: 500;
+    --ft-smw: 400;
+
+    --ft-sm-clr: rgb(128, 128, 128);
+    --bg-clr: rgb(162, 192, 190); 
+
+    --ff: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+h1, p, span, a, ul, *::after, *::before {
+    font-family: var(--ff);
+}
+
+a, ul {
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+}
+
+.ft-asm-icon::before, .ft-asm-icon, .ft-asm-icon::after  {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+}
+
+/* .container {
+    width: 100%;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+} */

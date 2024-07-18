@@ -1,0 +1,25 @@
+
+.faq-header button {
+    all: unset;
+}
+.faq-header button span:last-child {
+    font-size: 2rem;
+}
+
+.faq-item-question {
+    padding-left: 1rem;
+}
+.faq-item-question::marker {
+    content: "\f1b0";
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 700;
+    font-size: var(--ft-sm);
+    color: var(--bg-clr);
+}
+
+.faq-item-answer {
+    font-size: var(--ft-sm);
+    color: #999;
+    padding-left: 1.3rem;
+}
+

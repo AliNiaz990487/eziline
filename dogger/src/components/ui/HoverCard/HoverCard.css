@@ -1,0 +1,84 @@
+.hover-card {
+    /* transition: box-shadow 0.3s ease-in-out; */
+    cursor: pointer;
+    gap: 6rem;
+}
+
+.hover-card .image-container {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.hover-card:hover .image-container img {
+    /* border: 2px solid red; */
+    box-shadow: 1.2rem 1.2rem 0 var(--bg-clr);
+}
+
+.reverse-card {
+    flex-direction: row-reverse;
+}
+.reverse-text-container  {
+    align-items: start !important;
+}
+.reverse-text-container p {
+    text-align: left !important;
+}
+
+/* .reverse-card  */
+.text-container {
+    flex: 1;
+    /* padding: ; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.text-container h2{
+    font-size: var(--ft-md);
+    font-weight: var(--ft-mdw);
+    font-family: var(--ff);
+}
+.text-container p {
+    text-align: right;
+    font-size: 1.55rem;
+    font-weight: var(--ft-smw);
+    color: #999;
+}
+.text-container button {
+    all: unset;
+    background-color: var(--bg-clr);
+    font-size: var(--ft-sm);
+    color: #fff;
+    padding: 0.5em 1.5em;
+    border-radius: 2.5rem;
+    transition: background-color .5s;
+}
+.text-container button:hover {
+    background-color: #000;   
+}
+
+.image-container {
+    flex: 1;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .hover-card {
+        flex-direction: column-reverse;
+    }
+    .text-container {
+        align-items: start;
+    }
+    .text-container p {
+        text-align: left;
+    }
+    .reverse-text-container {
+        flex-direction: column;
+    }
+}
