@@ -31,16 +31,21 @@ const Home = () => {
           <ProfileCards />
           <PawText heading="pricing table" peragraph="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."/>
           <PricingCards />
+          <div id="faqId" className="m-5 p-5"></div>
           <Faq />
+          <div id="testimonialsId" className="m-5 p-5"></div>
           <PawText heading="Happy customers" />
           <HappyCustomers />
+          <div id="galleryId" className="m-5 p-5"></div>
           <PawText heading="photo gallery" />
           <Gallery />
+          <div id="blogId" className="m-5 p-5"></div>
           <PawText heading="dogger blog" peragraph="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts." />
           <BlogCards />
+          <div id="servicesId" className="m-5 p-5"></div>
           <PawText heading="our services" peragraph="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts." />
           <Services />
-          <div className="m-5 p-5"></div>
+          <div id="contactId" className="m-5 p-5"></div>
           <ContactForm/>
           <Footer />
         </main>
