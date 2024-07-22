@@ -87,7 +87,7 @@ const HappyCustomers = () => {
                                 <p>{customer.review}</p>
                             </div>
                             <div className="customer-image-container">
-                                <img className="customer-image rounded-circle mt-5" src={customer.image} alt={customer.name} />
+                                <img className="customer-image mt-5" src={customer.image} alt={customer.name} />
                             </div>
                             <div className="customer-name mt-2">{customer.name}</div>
                         </div>

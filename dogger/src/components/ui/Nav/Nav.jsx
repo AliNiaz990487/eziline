@@ -77,7 +77,7 @@ const Nav = () => {
               {
                 navState ? 
                 <li className="about-dropdown">
-                <a className="nav-link" href="#aboutId">About</a>
+                <a className="nav-link active" href="#aboutId">About</a>
                 <ul className="about-dropdown-content">
                   <li><a href="#trainersId">Trainers</a></li>
                   <li><a href="#pricingId">Pricing</a></li>
@@ -135,13 +135,13 @@ const Nav = () => {
               }
 
               <li className="nav-item">
-                <a className="nav-link" href="#trainersId">Trainers</a>
+                <a className="nav-link active" href="#trainersId">Trainers</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#servicesId">Services</a>
+                <a className="nav-link active" href="#servicesId">Services</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contactId">Contact</a>
+                <a className="nav-link active" href="#contactId">Contact</a>
               </li>
 
             </ul>

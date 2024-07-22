@@ -75,6 +75,7 @@
 .customer-image {
     width: 10rem;
     height: 10rem;
+    border-radius: 50%;
     border: 1rem solid var(--bg-clr);
 }
 .customer-name {
