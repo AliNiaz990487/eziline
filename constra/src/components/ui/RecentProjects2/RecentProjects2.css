@@ -1,0 +1,16 @@
+.news11 a{
+    color: #444;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: .8rem;
+    transition: color .2s;
+}
+
+.news11 a:hover{
+    color:#ffb600 ;
+}
+
+.date{
+    color: gray;
+    text-decoration: none;
+}

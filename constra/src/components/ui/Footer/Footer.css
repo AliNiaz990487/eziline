@@ -1,0 +1,45 @@
+.incor li a {
+    color: black;
+}
+
+.th li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.th li {
+    list-style-type: none;
+}
+
+.style {
+    background-color: #ffb600;
+}
+
+.font {
+    font-weight: 400;
+}
+
+.list-tag a {
+    font-size: 14px;
+    text-decoration: none;
+    color: gray;
+}
+
+.arrow {
+    color: gray;
+    font-size: 10px;
+    padding-right: .5rem;
+    padding-bottom: 4px;
+}
+
+.p-color {
+    color: gray;
+}
+
+.list-tag li {
+    /* border-bottom: 1px solid gray; */
+    /* width: 14rem; */
+    margin-top: 1rem;
+    list-style-type: none;
+}

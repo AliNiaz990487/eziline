@@ -1,0 +1,38 @@
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// Custom variables
+$primary: #ffb600;
+$body-bg: #fff;
+$font-family-base: "Montserrat", sans-serif;
+
+$h6-font-size: 13px;
+
+// Button-specific variables
+$btn-font-family: "Open Sans", sans-serif;
+$btn-font-weight: 700;
+$btn-padding-y: .5rem;
+$btn-padding-x: .5rem;
+$btn-primary-bg: $primary;
+$btn-primary-border-color: $primary;
+$btn-primary-color: #fff; // Ensure the text color is white
+
+// Import Bootstrap's SCSS
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom styles for buttons
+.btn-primary {
+    color: $btn-primary-color;
+    font-size: $h6-font-size;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    padding: $btn-padding-y $btn-padding-x;
+    white-space: nowrap;
+    
+    &:hover {
+        color: $primary;
+        background-color: black;
+        border-color: black;
+    }
+}

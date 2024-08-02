@@ -1,0 +1,25 @@
+.solutions .solution {
+    font-size: .8rem;
+    background-color: #ddd;
+    margin: 1rem 0;
+    padding: .5rem;
+    transition: background-color .4s;
+    cursor: pointer;
+} 
+.solutions .solution:hover {
+    background-color: #ffb600;
+}
+
+.solution-active {
+    background-color: #ffb600 !important;
+    color: white;
+}
+
+.service-points > p::before {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ffb600;
+    font-size: .7rem;
+    padding-right: .8rem;
+}

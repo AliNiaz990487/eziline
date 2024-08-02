@@ -1,0 +1,18 @@
+.common-header {
+    background-image: url("../../../assets/images/banner1.jpg");
+    min-height: 20rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.common-header > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.common-header img {
+    min-height: 8rem;
+    object-fit: cover;
+}

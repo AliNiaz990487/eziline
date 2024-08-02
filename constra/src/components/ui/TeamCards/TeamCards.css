@@ -1,0 +1,89 @@
+.team-slider {
+    padding: 20px 0;
+    position: relative;
+}
+
+.team-card {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    margin: 1rem;
+}
+
+.team-card > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 25%;
+    overflow: hidden;
+    transition: height .3s;
+    color: white;
+    padding: 1.4rem;
+}
+
+.team-card:hover > div {
+    height: 100%;
+}
+.team-card > div h4 {
+    color: #ffb050;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: start;
+}
+.team-card > div p {
+    text-align: start;
+    font-size: .6rem;
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.social-icons {
+    text-align: start;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.social-icons>* {
+    margin: 0 5px;
+    color: #999;
+    transition: color .2s;
+}
+
+.social-icons>*:hover {
+    color: #ddd;
+}
+
+.custom-next-arrow,
+.custom-prev-arrow {
+    position: absolute;
+    top: initial;
+    bottom: -4rem;
+    color: #000;
+    background-color: #bbb;
+    border-radius: 2px;
+    font-size: 3rem;
+    scale: 1.5;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color .2s;
+}
+
+.custom-next-arrow:hover,
+.custom-prev-arrow:hover {
+    background-color: #555;
+}
+
+.custom-next-arrow {
+    right: 43%;
+}
+
+.custom-prev-arrow {
+    left: 43%;
+}
+

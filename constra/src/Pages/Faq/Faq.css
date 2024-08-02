@@ -1,0 +1,9 @@
+.recent-post-link {
+    font-size: .7rem;
+    transition: color .3s;
+    cursor: pointer;
+}
+
+.recent-post-link:hover {
+    color: #fb0 !important;
+}

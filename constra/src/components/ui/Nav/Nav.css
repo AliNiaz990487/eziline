@@ -1,0 +1,140 @@
+nav {
+    --nav-height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--nav-height);
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    height: inherit;
+}
+nav ul li {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul li a {
+    transition: color .3s;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    background-color: #fff;
+    border-top: 2px solid var(--primary-color);
+    width: 13rem;
+    z-index: 1;
+}
+.dropdown a {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: .5rem 0.8rem;
+    color: #555;
+    transition: color .3s;
+}
+.dropdown a:last-child {
+    border: none;
+}
+.dropdown a:hover {
+    color: var(--primary-color);
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+} 
+nav ul li:hover .navlink, nav ul li:hover .charvion-icon{
+    color: var(--primary-color);
+}
+
+.navlink, nav ul li a, nav ul li span {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    color: white;
+}
+nav span {
+    color: white;
+}
+
+
+.inner-dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner-dropdown-header span {
+    color: black !important;
+}
+.inner-dropdown .dropdown {
+    position: absolute;
+    top: 65%;
+    left: 100%;
+    display: none !important;
+}
+.inner-dropdown:hover .dropdown {
+    display: block !important;
+
+}   
+
+
+.search-block {
+    position: relative;
+}
+.search-block div{
+    position: absolute;
+    right: 10%;
+    z-index: 10;
+    display: none;
+    animation: fade-in .5s forwards;
+}
+.search-block div input {
+    all: unset;
+    background-color: #444;
+    color: white;
+    padding: .4rem;
+}
+.search-block div input::placeholder {
+    color: #999;
+    font-size: .8rem;
+}
+.search-block div input:focus::placeholder {
+    color: #ccc;
+}
+.show {
+    display: block !important;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { 
+        opacity: 100% !important; 
+    }
+}
+
+.nav-accordion-btn:focus {
+    box-shadow: none;
+}
+
+/* =================================================== */
+
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav2-logo{
+    width: 10rem;
+}
+.nav2 nav ul li a, .nav2 nav ul li .charvion-icon  {
+    color: #444;
+}

@@ -1,0 +1,19 @@
+.our-people-card {
+    width: 100%;
+}
+.our-people-card img {
+    width: 100%
+}
+.our-people-card > div h4 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.our-people-card > div p {
+    font-size: .8rem;
+}
+@media (min-width: 768px) {
+    .our-people-card-md {
+        width: 15rem;
+    }
+}
