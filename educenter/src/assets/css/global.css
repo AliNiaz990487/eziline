@@ -1,0 +1,189 @@
+:root {
+    --fixed-header-height: 1.5rem;
+    --nav-height: 2.5rem;
+}
+.active {
+    color: var(--bs-primary) !important;
+    font-weight: 700;
+}
+.modal-backdrop.show {
+    z-index: 1;
+}
+.hover-primary-color {
+    transition: .2s color;
+    cursor: pointer;
+}
+.hover-primary-color:hover {
+    color: var(--bs-primary) !important;
+}
+.hover-nav-link {
+    position: relative;
+    cursor: pointer;
+}
+.hover-nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0px;
+    background-color: #fff;
+    transition: .1s height ease-in-out 0s;
+}
+.hover-nav-link-active::before {
+    height: 5px;
+}
+.hover-nav-link:hover::before {
+    height: 5px;
+}
+
+.drop-down-header {
+    position: relative;
+} 
+
+.drop-down-header ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 10rem ;
+    top: 6rem;
+    left: 0;
+    background-color: #fff;
+    color: black;
+    border-bottom: 5px solid var(--bs-primary);
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+}
+.drop-down-header:hover ul{
+    top: 5.4rem;
+    visibility: visible;
+    opacity: 1
+}
+.drop-down-header ul li {
+    padding: .5rem 1rem;
+}
+
+.sub-drop-down {
+    position: relative;
+}
+.sub-drop-down ul {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute;
+    top: 1rem !important;
+    left: -100%;
+}
+.sub-drop-down:hover ul {
+    top: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+
+
+.small-nav {
+    text-transform: uppercase;
+}
+.small-nav > li{
+    text-align: center;
+    padding: .5rem 0;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+}
+.small-nav > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #777;
+    z-index: -1;
+    transition: .3s height;
+}
+.small-nav > li:hover::before {
+    height: 100%;
+}
+
+
+
+.btn-primary {
+    background-color: white;
+    border-radius: 0;
+    position: relative;
+    border: 0;
+    border-bottom: 5px solid var(--bs-primary);
+    border-top: 5px solid var(--bs-primary);
+    z-index: 2;
+}
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--bs-primary);
+    z-index: -1;
+    transition: all .3s;
+}
+.btn-primary:hover::before {
+    height: 0;
+}
+.btn {
+    color: white;
+    padding: 8px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background-color: #fff;
+    color: var(--bs-primary);
+}
+
+
+
+
+
+
+
+.my-btn-primary {
+    all: unset;
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    border-top: 5px solid var(--bs-primary);
+    border-bottom: 5px solid var(--bs-primary);
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .4s all ease-in-out 0s;
+    padding: .2rem 1rem;
+    z-index: 2;
+}
+.my-btn-primary:hover{
+    color: black;
+}
+.my-btn-primary::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    background-color: var(--bs-primary);
+    transition: .4s all ease-in-out 0s;
+}
+
+.my-btn-primary-hover:hover::before {
+    bottom: unset;
+    top: 0;
+    height: 100%;
+    
+}
