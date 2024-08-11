@@ -2,6 +2,9 @@
     cursor: zoom-in;
     transition: scale .3s ease-in-out;
 }
+.gallery-row {
+    overflow: hidden;
+}
 
 .gallery-image:hover {
     scale: 1.3;

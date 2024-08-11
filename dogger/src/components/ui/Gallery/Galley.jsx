@@ -18,7 +18,7 @@ const Gallery = () => {
     <section data-aos="fade-up" className="m-5">
         {
             images.map((imgr, i) => (
-                <div className="row" key={i}>
+                <div className="row gallery-row" key={i}>
                     {
                         imgr.map((img, j) => (
                             <div className="col-12 col-sm-6 col-lg-3 p-0 m-0" key={j}>
