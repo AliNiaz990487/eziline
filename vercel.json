@@ -1,4 +1,10 @@
 {
+    "builds": [
+      {
+        "src": "dist/**/*",
+        "use": "@vercel/static"
+      }
+    ],
     "rewrites": [
       { "source": "/AVO", "destination": "/AVO" },
       { "source": "/constra", "destination": "/constra" },
