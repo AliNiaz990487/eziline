@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      { "source": "/AVO", "destination": "/AVO" },
+      { "source": "/constra", "destination": "/constra" },
+      { "source": "/dogger", "destination": "/dogger" },
+      { "source": "/educenter", "destination": "/educenter" },
+      { "source": "/hepts-tours", "destination": "/hepts-tours" }
+    ],
+    "redirects": [
+      { "source": "/", "destination": "/index.html", "permanent": true }
+    ]
+  }
+  
