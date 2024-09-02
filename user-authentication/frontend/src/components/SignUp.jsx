@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
+const BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 function SignUp() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -32,7 +34,7 @@ function SignUp() {
     setPasswordMatchError(false);
 
     axios
-      .post("http://127.0.0.1:3000/signup", { firstName, lastName, email, password })
+      .post(`${BASE_URL}/signup`, { firstName, lastName, email, password })
       .then((result) => {
         // location.reload();
         // console.log(result.data)

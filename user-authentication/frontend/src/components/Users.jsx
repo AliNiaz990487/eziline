@@ -2,11 +2,13 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 
 
+const BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 const Users = () => {
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:3000/users")
+    axios.get(`${BASE_URL}/users`)
       .then(result => setUsers(result.data))
       .catch(err => console.log(err))
   }, [])

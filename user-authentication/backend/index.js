@@ -1,3 +1,7 @@
+//username: alik990487
+//password: ohm4RsifBAvIMlIJ
+// mongodb+srv://alik990487:ohm4RsifBAvIMlIJ@users.uqpu0.mongodb.net/ 
+
 PORT = 3000
 const express = require("express")
 const mongoose = require("mongoose")
@@ -5,7 +9,12 @@ const cors = require("cors")
 const UserModel = require("./models/Users")
 
 const app = express()
-app.use(cors())
+app.use(cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Authorization"],
+    credentials: true, 
+}))
 app.use(express.json())
 
 
@@ -76,7 +85,7 @@ app.delete("/deleteUser/:id", (req, res) => {
 })
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/crud")
+mongoose.connect("mongodb+srv://alik990487:ohm4RsifBAvIMlIJ@users.uqpu0.mongodb.net/?retryWrites=true&w=majority&appName=users")
     .then(() => {
         console.log("Contected to db....")
         app.listen(PORT, () => {

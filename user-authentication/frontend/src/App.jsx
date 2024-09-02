@@ -5,8 +5,8 @@ const User = lazy(() => import("./pages/User"))
 
 const Preloader = () => (
   <div className="vh-100 d-flex justify-content-center align-items-center">
-    <div class="spinner-border text-warning" style={{scale: "1.5"}} role="status">
-      <span class="visually-hidden">Loading...</span>
+    <div className="spinner-border text-warning" style={{scale: "1.5"}} role="status">
+      <span className="visually-hidden">Loading...</span>
     </div>
   </div>
 )

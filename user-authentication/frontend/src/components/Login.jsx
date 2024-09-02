@@ -2,6 +2,9 @@ import axios from "axios";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // Icons for show/hide
 import { useNavigate } from "react-router-dom";
+
+const BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,7 +23,7 @@ function Login() {
     }
     setValidated(true);
     try {
-      const response = await axios.post("http://127.0.0.1:3000/login", { email, password });
+      const response = await axios.post(`${BASE_URL}/login`, { email, password });
 
       const loginModal = bootstrap.Modal.getInstance("#loginModal")
       loginModal.hide()

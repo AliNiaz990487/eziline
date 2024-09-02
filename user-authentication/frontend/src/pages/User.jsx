@@ -4,13 +4,15 @@ import Nav from "../components/Nav"
 import { useState, useEffect } from "react"
 import UpdateUser from "../components/UpdateUser"
 
+const BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 const User = () => {
   const { id } = useParams()
   const [user, setUser] = useState("")
   const navigate = useNavigate()
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:3000/user/${id}`)
+    axios.get(`${BASE_URL}/user/${id}`)
       .then(result => {
         setUser(result.data)
       }).catch(err => {
@@ -19,7 +21,7 @@ const User = () => {
   }, [])
 
   const handleDelete = () => {
-    axios.delete(`http://127.0.0.1:3000/deleteUser/${id}`)
+    axios.delete(`${BASE_URL}/deleteUser/${id}`)
       .then(result => {
         navigate("/")
       }).catch(err => {

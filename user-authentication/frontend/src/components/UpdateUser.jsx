@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
 
+const BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 const UpdateUser = () => {
   const [togglePass, setTogglePass] = useState(false);
   const [toggleCPass, setToggleCPass] = useState(false);
@@ -27,7 +29,7 @@ const UpdateUser = () => {
     }
     setValidated(false);
 
-    axios.put(`http://127.0.0.1:3000/updateUser/${id}`, { firstName, lastName, email, password })
+    axios.put(`${BASE_URL}/updateUser/${id}`, { firstName, lastName, email, password })
       .then(result => {
         console.log(result.data);
         window.location.reload()
@@ -40,7 +42,7 @@ const UpdateUser = () => {
   };
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:3000/user/${id}`)
+    axios.get(`${BASE_URL}/user/${id}`)
       .then(result => {
         const { firstName, lastName, email, password } = result.data;
         setFirstName(firstName);
