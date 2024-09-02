@@ -2,13 +2,14 @@
 //password: ohm4RsifBAvIMlIJ
 // mongodb+srv://alik990487:ohm4RsifBAvIMlIJ@users.uqpu0.mongodb.net/ 
 
-PORT = 3000
 const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
 const UserModel = require("./models/Users")
 
 const app = express()
+const PORT = process.env.PORT || 3000;
+
 app.use(cors({
     origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"],
