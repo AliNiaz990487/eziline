@@ -8,7 +8,7 @@ const cors = require("cors")
 const UserModel = require("./models/Users")
 
 const app = express()
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors({
     origin: "*",
@@ -86,7 +86,7 @@ app.delete("/deleteUser/:id", (req, res) => {
 })
 
 
-mongoose.connect("mongodb+srv://alik990487:ohm4RsifBAvIMlIJ@users.uqpu0.mongodb.net/?retryWrites=true&w=majority&appName=users")
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log("Contected to db....")
         app.listen(PORT, () => {
@@ -96,3 +96,6 @@ mongoose.connect("mongodb+srv://alik990487:ohm4RsifBAvIMlIJ@users.uqpu0.mongodb.
     .catch((err) => {
         console.log(err)
     })
+
+
+export default app
