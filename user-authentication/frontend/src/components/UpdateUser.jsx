@@ -42,6 +42,7 @@ const UpdateUser = () => {
   };
 
   useEffect(() => {
+    console.log("base url in useEfect ", BASE_URL);
     axios.get(`${BASE_URL}/user/${id}`)
       .then(result => {
         const { firstName, lastName, email, password } = result.data;
@@ -52,7 +53,7 @@ const UpdateUser = () => {
         setCPassword(password);
       })
       .catch(err => console.error(err));
-  }, [id]);
+  }, []);
 
   return (
     <div className="d-inline">
